@@ -8,9 +8,6 @@ import javafx.stage.Stage;
 import sample.Models.UserModel;
 import sample.database.UserDB;
 
-// yvr8v]7eJW"!AQ2b
-// omdb api 64295b79
-
 public class Main extends Application {
     private final UserDB db = new UserDB();
     private final UserModel user = new UserModel();
