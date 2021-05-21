@@ -30,9 +30,9 @@ public class UserDB {
         String sqlCommand = "CREATE TABLE IF NOT EXISTS user (Id INT PRIMARY KEY AUTO_INCREMENT, username VARCHAR(20), password VARCHAR(20))";
         String insertCommand = "insert into user (username , password) values (? , ?)";
 
-        String username = "root";
-        String pass = "yvr8v]7eJW\"!AQ2b";
-        String url = "jdbc:mysql://localhost:3306/jdbc_test";
+        String username = "your username";
+        String pass = "your pass";
+        String url = "your url";
         try(Connection connection = DriverManager.getConnection(url, username, pass);
             Statement statement = connection.createStatement())  {
 
@@ -53,7 +53,7 @@ public class UserDB {
 
     public void output() throws ClassNotFoundException, IllegalAccessException, InstantiationException, SQLException {
         Class.forName("com.mysql.jdbc.Driver").newInstance();
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc_test", "root", "yvr8v]7eJW\"!AQ2b");
+        Connection con = DriverManager.getConnection("your url", "your username", "your pass");
 
         Statement st = con.createStatement();
         String sql = ("select * from user");
