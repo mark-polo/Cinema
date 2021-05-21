@@ -93,7 +93,7 @@ public class FilmModel {
 
 
     public void film() throws IOException {
-        URL url = new URL("http://www.omdbapi.com/?t=" + getSearch() + "&apikey=64295b79");
+        URL url = new URL("http://www.omdbapi.com/?t=" + getSearch() + "&apikey=your api key");
 
         Scanner in = new Scanner((InputStream) url.getContent());
 
